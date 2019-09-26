@@ -10,6 +10,7 @@ minVals = [170, 0, -10, 0];
 
 (async function main () {
     //model = await tf.loadLayersModel('/models/seq2seq/model.json');
+    console.log(sitePath+'/models/lstm/model.json');
     model = await tf.loadLayersModel(sitePath+'/models/lstm/model.json');
 }());
 
