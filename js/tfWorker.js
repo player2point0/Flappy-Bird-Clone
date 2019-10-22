@@ -12,6 +12,7 @@ minVals = [170, 0, -10, 0];
 
     try 
     {
+        //remove batch normalisation and retrain
         model = await tf.loadLayersModel(sitePath+'/models/lstm/model.json');
         console.log(model);
     }
