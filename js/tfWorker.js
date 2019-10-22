@@ -3,15 +3,26 @@ importScripts("https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest");
 
 var seqLen = 100;
 var model;
-var sitePath = "/Flappy-Bird-Clone";//""
+var sitePath = "..";//"/Flappy-Bird-Clone";//""
 
 maxVals = [600, 1, 18, 500];
 minVals = [170, 0, -10, 0];
 
 (async function main () {
-    model = await tf.loadLayersModel(sitePath+'/models/lstm/model.json');
-}());
 
+    try 
+    {
+        model = await tf.loadLayersModel(sitePath+'/models/lstm/model.json');
+        console.log(model);
+    }
+    catch (error) 
+    {
+        console.log("error loading model");
+        console.log(error);
+        //alert("error loading model");    
+    }
+
+}());
 
 onmessage = function(e) {
 

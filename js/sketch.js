@@ -36,7 +36,7 @@ var tfWorker;
 var pred;
 var framesSinceLastPred = 0;
 
-var host = location.href;//""
+var host = "";//location.href;//""
 
 function preload() {
   pipeBodySprite = loadImage(host+'graphics/pipe_marshmallow_fix.png');
