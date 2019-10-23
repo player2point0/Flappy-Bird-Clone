@@ -3,7 +3,7 @@ importScripts("https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest");
 
 var seqLen = 100;
 var model;
-var sitePath = "..";//"/Flappy-Bird-Clone";//""
+var sitePath = "/Flappy-Bird-Clone";//""
 
 maxVals = [600, 1, 18, 500];
 minVals = [170, 0, -10, 0];
